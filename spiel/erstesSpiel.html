@@ -6,9 +6,10 @@
     <!-- das CSS -->
     <style>
       body {
-        background-color: midnightblue;
+        // Background image from Pixabay
+        background: url("background.jpg") center;
         cursor: url("lightsaber.png"),auto;
-	color: white;
+	      color: white;
       }
       #vader {
         width: 100px;
@@ -26,7 +27,7 @@
       // Dieses Script ausführen nachdem die Webseite geladen ist
       $(document).ready( function() { 
         var stopuhr;
-        
+              
         /**
          * selbstgeschriebene Funktion zum Spielen
          */
@@ -42,8 +43,8 @@
           });      
         
           // Stopuhr mit einem Timeout erzeugen
-          // das Spiel stoppen wenn der Timeout abgelaufen ist (nach 1000 Millisekunden)
-          stopuhr = setTimeout( function() { beendeSpiel() }, 1000 );      
+          // das Spiel stoppen wenn der Timeout abgelaufen ist (nach 2000 Millisekunden)
+          stopuhr = setTimeout( function() { beendeSpiel() }, 2000 );      
         
         }
         
@@ -73,6 +74,7 @@
   <body>
     Hallo, schlage mich schneller als alle 2 Sekunden, oder ich zerquetsche dich! 
  
-    <img id="vader" src="vader.png">
+    <img id="vader" src="vader.png" />
 
   </body>
+</html>
